@@ -4768,3 +4768,19 @@ td:last-child {
 .contact-list li {
 	padding-left: 0;
 }
+
+
+/* In your styles.css, ensure these are NOT hidden on mobile */
+@media (max-width: XXXpx) { /* Replace XXXpx with your breakpoint if different */
+    .s-intro__content-media,
+    .s-intro__content-media-inner {
+        display: block !important; /* Or flex, if it's a flex container */
+        width: auto !important;
+        height: auto !important;
+        /* Add any other properties to ensure it's visible and sized correctly */
+    }
+    .s-intro__content-media-inner img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
